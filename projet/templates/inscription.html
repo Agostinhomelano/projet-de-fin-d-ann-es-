@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+    </section> 
+    <form action="{{url_for('inscription')}}" method="post">
+        <fieldset  class="item2" form="id_class">
+            <legend>information sur le candidat</legend>
+            <h3>informations personnel sur le candidat</h3>
+                <p>Nom: <input type="text" name="nom" autocomplete="on" required autofocus></p>
+                <!-- <p>Post-nom: <input type="text" autocomplete="on" required></p>
+                <p>prénom: <input type="text" autocomplete="on" required></p>
+                <p>age : <input type="number" required></p>
+                <p>Téléphone portable: +243 <input type="number" required max="9"></p> -->
+                <p>email <input type="email" placeholder="nom@gmail.com" name="email" required></p>
+                <p>mo_de_passe: <input type="password" name="mdp" id="mdp" pattern=".{10,}" title="minimum 8 caracteres" required></p>
+                <!-- <p>Etes vous marier? <br>Oui<input name="ch" type="radio"> Non <input name="ch" type="radio" required></p>
+                <p>nombre d'enfant <input type="number"></p>
+                <h3>informations proffesionnel sur le candidat</h3>
+                <p>niveau d'étude:</p>
+                <select name="class" id="id_class" required >
+                <option>maternelle</option>
+                <option>primaire</option>
+                <option>secondaire</option>
+                <option>D4</option>
+                <option>D6</option>
+                <option>graduat</option>
+                <option>licence</option>
+                <option>master</option>
+                <option>docteur</option>
+                <option>autre</option>
+                </select>
+                <p>proffesion: <input type="text" required></p>
+                <p>cv: <input type="file" value="votre cv"></p> -->
+                <P><input type="submit" value="s'inscrire"></P>
+        </fieldset>
+    </form>
+    {% endblock%}
+    

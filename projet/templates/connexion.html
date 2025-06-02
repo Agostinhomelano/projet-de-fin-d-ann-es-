@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/connexion.css') }}">
+    <title>connexion</title>
+</head>
+<body>
+    <div class="champ">
+    <img src="{{url_for('static',filename='img/AGRIFAYOL.png')}}" alt="image" width="200px">
+    <h2>connectez vous à votre compte</h2>
+    <form action="" method="post" >
+        <p>email: <input type="email" name="email" id="email" autofocus autocomplete="on" required></p>
+        <p>Mot de passe: <input type="password" name="mdp" id="mdp" autocomplete="on" required></p>
+        <p><input type="submit" id="bouton" value="se connecter"></p>
+    </form>
+    <p class="p">vous n'avez pas encore de compte ?<a href="{{url_for('inscription')}}">cliquez ici</a></p>
+    
+    </div>
+</body>
+</html>

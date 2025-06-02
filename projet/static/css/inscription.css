@@ -1,0 +1,77 @@
+body
+{
+    /* background-image: url();
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     */
+     background-color: #eee;
+     display: grid;
+     grid-template-rows: auto auto auto ;
+     grid-template-columns: 1fr 25px 1fr;
+     grid-template-areas:"entete entete entete"
+                         "principal . lateral"
+                         "pied pied pied ";
+}
+.item
+{
+     border: 1px solid 0 ;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0,5);
+     background-color: #4b010177;
+     background-size: cover;
+     font-weight: bolder;
+     padding: 10px;
+}
+.item2
+{
+     background-color: antiquewhite;
+     border: none;
+}
+header
+{
+     grid-area: entete;
+}
+section
+{
+    grid-area: principal;
+    width: 200px;
+    margin: 0 0 20px ;
+}
+fieldset
+{
+    grid-area: lateral;
+    margin: 0 0 20px;
+    padding: 0 0 0 30px;
+    width: 1000px;
+    height: auto;
+}
+footer{grid-area: pied;}
+a
+{
+    display: block;
+    padding: 30px 20px 30px 40px ;
+}
+.bouton ,.bouton-retour
+{
+    border: none;
+    /*animation*/
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bouton:hover ,.bouton-retour:hover
+{
+    background-color: #4b010177;
+}
+.conteneur
+{
+    display: flex;
+
+}
+.cont-item
+{
+    background-color: white;
+    height: 413px;
+}

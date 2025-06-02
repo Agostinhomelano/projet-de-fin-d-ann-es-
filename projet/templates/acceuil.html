@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>AGRIFAYOL</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/acceuil.css')}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/AGRIFAYOL.png')}}">
+    </head>
+    <body>
+        <nav class="menu"><a href="{{url_for('accueil')}}"><button class="bouton">Accueil</button></a><a href="{{url_for('produits')}}"> <button class="bouton">proiduits</button></a> <a href="{{url_for('connexion')}}"> <button class="bouton">formations</button></a> <a href="{{url_for('actualites')}}"><button class="bouton">actualités</button></a> <a href="{{url_for('commandes')}}"><button class="bouton">commander</button></a> <a href="{{url_for('reservation')}}"><button class="bouton">reservation</button></a></nav>
+        <div class="conteneur">
+        <div><img class="img" src="{{ url_for('static', filename='img/AGRIFAYOL.png')}}" alt="image"></div>
+        <div class="cont-item"><h1>AGRIFAYOL<br> POUR UNE ALIMENTATION SAINE & PROPRE</h1>
+        <p><i>votre Premier fournisseur agro-alimentaire en RDC est en afrique centrale.</i></p></div>
+        </div>
+        <div class="a"></div>
+    <div class="font">
+    
+    <header class="slider">            
+                
+<div class="carousel">
+    <input type="radio" name="post" id="post1" checked>
+    <input type="radio" name="post" id="post2">
+    <input type="radio" name="post" id="post3">
+  
+    <div class="slides">
+      <div class="slide"><img src="{{ url_for('static', filename='img/plante.jpg')}}" alt=""></div>
+      <div class="slide"><img src="" alt="{{ url_for('static', filename='img/agriculture.jpg')}}"></div>
+      <div class="slide"><img src="{{ url_for('static', filename='img/AGRIFAYOL.png')}}" alt=""></div>
+    </div>
+  
+    <div class="controls">
+      <label for="post3" class="left arrow post1"></label>
+      <label for="post1" class="left arrow post2"></label>
+      <label for="post2" class="left arrow post3"></label>
+  
+      <label for="post2" class="right arrow post1"></label>
+      <label for="post3" class="right arrow post2"></label>
+      <label for="post1" class="right arrow post3"></label>
+    </div>
+  </div>
+  
+            </header> 
+            <aside class="item2"><div class="par">
+                <h2>Bienvenu sur la plate form officiel de AGRIFAYOL</h2>
+            <p class="p1">
+                <strong>AGRIFAYOL</strong> est une <strong>START-UP</strong> spécialisée dans la <strong>FOOD-TECH </strong>, dans l'éxploitation
+                et la production agricole et piscicole, dans l'industrialisation des denrées
+                alimentaire ainsi que dans l'industrialisation des nutriment pour animaux
+                d'élévage.
+            </p>
+                <h2> VISIONS</h2>
+            <p> nous envisageons :
+                <ul>
+                <li> Etre le plus grand <strong>PRODUCTEUR</strong> des poissons au marché local et continantal</li>
+                <li> Etre le Premier producteur des nutriments pour animaux en AFRIQUE CENTRAL</li>
+                <li> Etre le plus grand producteur des Engrais Organiques et Chimiques en AFRIQUE</li>
+                <li> Nourrir 45% de la population AFRICAINE </li>
+                </ul>
+            </p>
+                <h2>OBJECTIFS</h2>
+            <p> nos objectifs sont :
+                <ul>
+                <li>Créer une Industrie de transformation des Matières Premier(mais,manioc…)</li>
+                <li> ameliorer la production agricole, piscicole et avicole au niveau du marché local et continentale par l'installation de plus de 15 fermes <strong>AGRO-PASTORALE</strong></li>
+                <li> Créer une usine de production de nutriment pour animaux, de Engrais Organiques et Chimiques pour la culture maraichère</li>
+                <li>Créer une Industrie piscicole et un centre d'ecloserie pour la gestion et la production des <strong>ALEVINS</strong></li>
+                </ul>
+                
+            </p>
+                 <h2>BUTS</h2>
+                <p>
+                    <ul>
+                    <li>Ameliorer la consommation locale et continantal </li>
+                    <li>Créer le maximum d'emplois au niveau local et continentale</li>
+                    <li>Créer un RESEAU DE DISTRIBUTION </li>
+                    <li>Lutter contre la famine en afrique</li>
+                    </ul>
+            </p>
+            <p><h2>PROJET AGRICOLE & PISCICOLE</h2>
+                Nous envisageons  l'installation d'une chaine de production des produits agricoles 
+               tels que : le manioc, maïs, piments…… ainsi que l'installation d'une ferme agro
+               pastorale dont nous élèverons : le tilapia, les silures, le porc, les poules, les 
+               canards, les lapins, etc. Pour cela nous comptons exploiter 2,5 hectares de terre. <br>
+               <strong>ZONE GÉOGRAPHIQUE:</strong> 
+               Kinshasa/ Kimbaseke - Mokali
+                Superficie : 2,5 hectares <br>
+               <strong>LE PERSONNEL :</strong>
+               Le Projet  sera exécuté par un réseau de 15 Agents selon les besoins du Projet 
+               repartis dans les différents domaines</p>
+                <h2>ENGRAIS</h2>
+                <div class="engrais">
+                    <div class="champA">A</div>
+                    <div class="champb">B</div>
+                    <div class="champc">C</div>
+                </div>
+        </aside>
+    </div>
+    <footer class="item">
+        <p><strong>voulez vous participer a nos formations videos ?</strong><br>
+           <a" href="{{url_for('inscription')}}" class="bouton">cliquer ici</a>
+           <!-- <button class="bouton-inscription" onclick="window.location.href='inscription.html';">clique ici</button><br><br> -->
+
+        </p>
+    </footer>
+
+</body>
+</html>

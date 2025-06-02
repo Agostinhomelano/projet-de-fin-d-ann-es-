@@ -1,0 +1,268 @@
+.fond
+{
+    display: grid;
+    grid-template-rows: auto auto auto ;
+    grid-template-columns: 1fr 25px 1fr;
+    grid-template-areas:"entete entete entete"
+                        "principal lateral"
+                        "pied pied pied ";
+}
+.item
+{
+    border: 1px solid 0 ;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,5);
+    background-color: #4b010177;
+    background-size: cover;
+    font-weight: bolder;
+    padding: 10px;
+    height: 300px;
+    margin: 10px 10px;
+}
+.menu
+{
+    display: flex;
+    border:0 solid ;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,01.1em);
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.item2
+{
+     background-color: antiquewhite;
+}
+header
+{
+    margin: 0 0 10px 0;
+}
+header{grid-area: entete;}
+
+aside
+{
+    grid-area: lateral;
+    margin: 20px 150px 0 150px;
+    padding: 0 30px 10px 30px;
+    
+}
+footer{grid-area: pied;}
+a
+{
+    display: block;
+    padding: 30px 20px 30px 40px ;
+}
+
+body
+{
+    background-color :#eee;
+    margin: 0;
+    padding: 0;
+}
+
+.p1
+{
+    text-indent: 20px;
+}
+.a
+{
+    border :none;
+    border-bottom: 20px;
+    border-color: #4b010177;
+    border-width: 8px;
+    border-style: solid;
+    margin: 10px 0 10px 0;
+}
+.par 
+{
+    border-width: 0;
+    border-style: solid;
+    margin: center;
+    background-color: antiquewhite;
+    width: 1000px;
+    overflow: hidden;
+}
+.img
+{
+    width: 635px;
+    
+}
+.img1
+{
+    width: 1000px;
+    height: 430px;
+}
+h1
+{
+    color: rgb(6, 47, 6);
+    display: inline;
+    padding: 50px ;
+}
+.img
+{
+    display: inline;
+}
+@keyframes bouger {
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(100px);}
+    100%{transform: translateX(0px);}
+}
+.conteneur
+{
+   display: flex;
+    animation: bouger 4s 3 ;
+}
+.cont-item , .img
+{
+    margin-top:80px ;
+}
+.cont-item
+{
+
+    background-color: rgb(255, 255, 255);
+    height: 432px;
+    text-indent: 20px;
+    width: auto;
+}
+.bouton-inscription
+{
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #2f0505e0;
+}
+.bouton
+{
+    border: none;
+    /*animation*/
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bouton:hover{
+    background-color: #5c02028c;
+    border-radius: 35px;
+}
+.engrais
+{
+    border: none;
+    height: 500px;
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /*gap: 10px; espaces entre les cellules*/
+}
+.champA
+{
+    grid-row: 1/span 2;
+    border: none;
+    background-color: #aa5230;
+    padding: 10px;
+}
+.champb
+{
+    background-color: lightblue;
+    padding: 10px;
+}
+.champc
+{
+    background-color: lightgreen;
+    padding: 10px;
+}
+h2
+{
+    font-size: 40px;
+    display: inline-block;
+}
+
+.carousel {
+    position: relative;
+    width:800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-left: 250px;
+  }
+  
+  .slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    width: 800px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  #post1:checked ~ .slides {
+    transform: translateX(0%);
+  }
+  #post2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  #post3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    border-radius: 50%;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  .arrow.right {
+    right: 10px;
+  }
+  
+  .arrow.left::before {
+    content: "<";
+  }
+  .arrow.right::before {
+    content: ">";
+  }
+  
+  /* Affiche la bonne paire de flèches selon l’image sélectionnée */
+  #post1:checked ~ .controls .post1,
+  #post2:checked ~ .controls .post2,
+  #post3:checked ~ .controls .post3 {
+    display: block;
+  }

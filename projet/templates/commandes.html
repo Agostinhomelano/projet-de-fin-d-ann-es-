@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>commande</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/AGRIFAYOL.png')}}">
+<style>
+.fond
+{
+    
+}
+.menu
+{
+    display: flex;
+    border:0 solid ;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,01.1em);
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+body
+{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+h1
+{
+    padding-top: 80px;
+}
+
+
+.bouton
+{
+    border: none;
+    /*animation*/
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bouton:hover{
+    background-color: #5c02028c;
+    border-radius: 35px;
+}
+.bouton-com
+{
+    color: white;
+    border: none;
+    /*animation*/
+    background-color: transparent;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+}
+.bouton-com:hover{
+    background-color: white;
+    color: black;
+    border-radius: 35px;
+}
+input
+{
+    background-color: #63ef8d;
+    border-radius: 5px;
+    border: none;
+}
+
+
+</style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="{{url_for('accueil')}}"><button class="bouton">Accueil</button></a>
+        <a href="{{url_for('actualites')}}"><button class="bouton">Actualités</button></a>
+        <a href="{{url_for('connexion')}}"> <button class="bouton">Formations</button></a>
+        <a href="{{url_for('reservation')}}"><button class="bouton">Reservation</button></a>
+    </nav>
+    <div class="font">
+<h1>Passer une commande</h1>
+<form action="post">
+    <fieldset>
+        <label for="">Produits :</label>
+        <input type="text" name="produit" required><br><br>
+        <label for="">Quantite :</label>
+        <input type="number" name="quantite" id="" required><br><br>
+        <button class="bouton-com" type="submit">commander</button>
+    </fieldset>
+</form>
+</div>
+
+
+</body>
+</html>

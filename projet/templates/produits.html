@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>AGRIFAYOL</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/acceuil.css')}}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/AGRIFAYOL.png')}}">
+    </head>
+    <body>
+        <nav class="menu">
+            <a href="{{url_for('accueil')}}"><button class="bouton">Accueil</button></a>
+            <a href="{{url_for('actualites')}}"><button class="bouton">Actualités</button></a>
+            <a href="{{url_for('connexion')}}"> <button class="bouton">Formations</button></a>
+            <a href="{{url_for('commandes')}}"><button class="bouton"> Commande</button></a>
+            <a href="{{url_for('reservation')}}"><button class="bouton">Reservation</button></a>
+        </nav>
+        <div class="conteneur">
+        <div><img class="img" src="{{ url_for('static', filename='img/AGRIFAYOL.png')}}" alt="image"></div>
+        <div class="cont-item"><h1>AGRIFAYOL<br> POUR UNE ALIMENTATION SAINE & PROPRE</h1>
+        <p><i>votre Premier fournisseur agro-alimentaire en RDC est en afrique centrale.</i></p></div>
+        </div>
+        <div class="a"></div>
+    <div class="font">
+    <h1>produits</h1>
+    <div><p>bonjours</p></div><br>
+    <div >
+        <div >
+            <img src="{{ url_for('static', filename='img/paysages de campagne.png')}}" alt="image">
+            <img src="{{ url_for('static', filename='img/engrais.png')}}">
+            <img src="{{ url_for('static', filename='img/crotte.png')}}">
+            <img src="{{ url_for('static', filename='img/paysages de campagne.png')}}">
+        </div>
+    </div>
+</div>
+<footer class="item">
+    <p><strong>voulez vous participer a nos formations videos ?</strong><br>
+       <a" href="{{url_for('inscription')}}" class="bouton">cliquer ici</a>
+       <!-- <button class="bouton-inscription" onclick="window.location.href='inscription.html';">clique ici</button><br><br> -->
+
+    </p>
+</footer>
+
+</body>
+</html>
